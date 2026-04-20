@@ -1,0 +1,198 @@
+{
+  "schema": "urn:ropf:0.1:compte_tiers",
+  "version_schema": "0.1.0",
+  "id_compte": "cmp-google-001",
+  "service": "google",
+  "categorie_service": "identite_numerique",
+  "identifiant_connexion": "jean.dupont@gmail.com",
+  "mot_de_passe_fictif": "motdepasse_bidonnnn_2026",
+  "methode_authentification": [
+    "mot_de_passe",
+    "totp"
+  ],
+  "double_facteur_active": true,
+  "email_recuperation": "secours.dupont@example.fr",
+  "telephone_recuperation": "+33600000000",
+  "questions_recuperation": [
+    {
+      "question": "nom de votre premier chat",
+      "reponse_fictive": "chaussette-factice"
+    }
+  ],
+  "date_derniere_connexion_connue": "2026-04-19T21:11:00Z",
+  "statut_compte": "actif",
+  "mentions": {
+    "secret_fictif": true,
+    "utilisable_en_reel": false
+  },
+  "historique_mots_de_passe_fictifs": [
+    "password123_FAKE",
+    "dupont1987_demo",
+    "azerty1234_bidonnn",
+    "jeanMichel!2020_fake"
+  ],
+  "tokens_fictifs": [
+    {
+      "type": "session_cookie",
+      "valeur": "SESSIONID_DEMO_FAKE_ABC123",
+      "date_capture": "2026-04-18T20:11:00Z"
+    },
+    {
+      "type": "api_token",
+      "valeur": "api_demo_token_not_real_987654",
+      "date_capture": "2026-04-18T20:12:00Z"
+    }
+  ],
+  "sessions_connues": [
+    {
+      "ip": "192.168.1.45",
+      "localisation": "Metz, FR",
+      "appareil": "Chrome Windows",
+      "date": "2026-04-19T21:11:00Z"
+    },
+    {
+      "ip": "82.64.120.55",
+      "localisation": "Paris, FR",
+      "appareil": "Android",
+      "date": "2026-04-15T18:02:00Z"
+    }
+  ],
+  "donnees_profile": {
+    "nom_affichage": "Jean Dupont",
+    "date_creation_compte": "2012-06-01",
+    "derniere_modification_profil": "2026-03-10",
+    "preferences": {
+      "langue": "fr",
+      "publicite_personnalisee": true
+    }
+  },
+  "donnees_paiement_fictives": [
+    {
+      "type": "carte_bancaire",
+      "numero_partiel": "4970 **** **** 1234",
+      "expiration": "12/28",
+      "cvv_fictif": "999"
+    }
+  ],
+  "historique_connexions": [
+    {
+      "date": "2026-04-19T21:11:00Z",
+      "ip": "192.168.1.45",
+      "succes": true
+    },
+    {
+      "date": "2026-04-19T21:10:00Z",
+      "ip": "185.23.44.12",
+      "succes": false
+    }
+  ],
+  "exposition_fuites": {
+    "nombre_fuites_connues": 4,
+    "sources_fictives": [
+      "leak_demo_forum_2024",
+      "dump_fake_cloud_2025",
+      "breach_test_dataset",
+      "mirror_darkweb_demo"
+    ],
+    "dernier_signalement": "2026-02-14"
+  },
+  "comptes_associes_fuite_massive": [
+    {
+      "id_compte": "cmp-amazon-002",
+      "service": "amazon",
+      "categorie_service": "ecommerce",
+      "identifiant_connexion": "jean.dupont@laposte.net",
+      "mot_de_passe_fictif": "amazon_leak_demo_2026",
+      "historique_commandes_fictif": [
+        {
+          "date": "2026-03-12",
+          "produit": "perceuse",
+          "montant": 89.99
+        },
+        {
+          "date": "2026-02-01",
+          "produit": "couches bébé",
+          "montant": 45.2
+        }
+      ]
+    },
+    {
+      "id_compte": "cmp-ldlc-001",
+      "service": "ldlc",
+      "categorie_service": "informatique",
+      "identifiant_connexion": "jd_tech57",
+      "mot_de_passe_fictif": "ldlc_fake_pass",
+      "historique_commandes_fictif": [
+        {
+          "date": "2025-12-10",
+          "produit": "SSD 1To",
+          "montant": 79.0
+        }
+      ]
+    },
+    {
+      "id_compte": "cmp-laredoute-001",
+      "service": "la_redoute",
+      "categorie_service": "vetement_maison",
+      "identifiant_connexion": "dupont.famille",
+      "mot_de_passe_fictif": "laredoute_demo_pass",
+      "historique_commandes_fictif": [
+        {
+          "date": "2026-01-15",
+          "produit": "rideaux",
+          "montant": 120.0
+        }
+      ]
+    },
+    {
+      "id_compte": "cmp-sexshop-001",
+      "service": "sexshop_online",
+      "categorie_service": "adulte",
+      "identifiant_connexion": "jd_secret_account",
+      "mot_de_passe_fictif": "oops_private_but_leaked",
+      "historique_commandes_fictif": [
+        {
+          "date": "2025-11-22",
+          "produit": "produit_adulte_demo",
+          "montant": 59.9
+        }
+      ]
+    },
+    {
+      "id_compte": "cmp-caf-001",
+      "service": "caf",
+      "categorie_service": "administratif",
+      "identifiant_connexion": "5482910X",
+      "mot_de_passe_fictif": "caf_demo_pass",
+      "donnees": {
+        "allocations": [
+          "apl",
+          "allocations_familiales"
+        ],
+        "dernier_paiement": "2026-04-05"
+      }
+    },
+    {
+      "id_compte": "cmp-impots-001",
+      "service": "impots_gouv",
+      "categorie_service": "administratif",
+      "identifiant_connexion": "273849102938",
+      "mot_de_passe_fictif": "impots_demo_pass",
+      "donnees": {
+        "revenu_declare": 42000,
+        "dernier_avis": "2025"
+      }
+    },
+    {
+      "id_compte": "cmp-hopital-001",
+      "service": "hopital_portail_patient",
+      "categorie_service": "sante",
+      "identifiant_connexion": "jd_patient_57",
+      "mot_de_passe_fictif": "hopital_demo_pass",
+      "donnees": {
+        "derniere_consultation": "2026-03-02",
+        "service": "cardiologie"
+      }
+    }
+  ]
+}

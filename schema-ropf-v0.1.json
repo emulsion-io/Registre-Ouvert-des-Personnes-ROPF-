@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ropf:0.1:schema",
+  "title": "ROPF v0.1",
+  "type": "object",
+  "required": [
+    "schema",
+    "version_schema",
+    "id_dossier",
+    "personne",
+    "etat_civil",
+    "coordonnees",
+    "adresses",
+    "comptes_numeriques",
+    "audit",
+    "extensions"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "urn:ropf:0.1"
+    },
+    "version_schema": {
+      "type": "string"
+    },
+    "id_dossier": {
+      "type": "string"
+    },
+    "personne": {
+      "type": "object",
+      "required": [
+        "type_personne",
+        "statut_existence",
+        "langue_principale"
+      ],
+      "properties": {
+        "type_personne": {
+          "type": "string"
+        },
+        "statut_existence": {
+          "type": "string"
+        },
+        "langue_principale": {
+          "type": "string"
+        },
+        "date_creation_dossier": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "etat_civil": {
+      "type": "object"
+    },
+    "coordonnees": {
+      "type": "object"
+    },
+    "adresses": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "foyer": {
+      "type": "object"
+    },
+    "parcours_professionnel": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "liens_administratifs": {
+      "type": "object"
+    },
+    "comptes_numeriques": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id_compte",
+          "service",
+          "identifiant_connexion",
+          "mot_de_passe_fictif",
+          "statut_compte"
+        ],
+        "properties": {
+          "id_compte": {
+            "type": "string"
+          },
+          "service": {
+            "type": "string"
+          },
+          "categorie_service": {
+            "type": "string"
+          },
+          "identifiant_connexion": {
+            "type": "string"
+          },
+          "mot_de_passe_fictif": {
+            "type": "string"
+          },
+          "methode_authentification": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "double_facteur_active": {
+            "type": "boolean"
+          },
+          "email_recuperation": {
+            "type": "string"
+          },
+          "telephone_recuperation": {
+            "type": "string"
+          },
+          "questions_recuperation": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "date_derniere_connexion_connue": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "statut_compte": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "historique": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "audit": {
+      "type": "object",
+      "required": [
+        "date_creation",
+        "date_mise_a_jour"
+      ],
+      "properties": {
+        "date_creation": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "date_mise_a_jour": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "niveau_confiance_global": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": true
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

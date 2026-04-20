@@ -1,0 +1,48 @@
+{
+  "schema": "urn:ropf:0.1",
+  "version_schema": "0.1.0",
+  "id_foyer": "foyer-57-0001",
+  "type_foyer": "couple_avec_enfants",
+  "adresse_principale": {
+    "ligne_1": "12 rue des Lilas",
+    "code_postal": "57000",
+    "commune": "Metz",
+    "departement": "57",
+    "pays": "FR"
+  },
+  "membres": [
+    {
+      "id_personne_reference": "personne:jean-dupont-001",
+      "role": "adulte_referent",
+      "nom_affichage": "Jean Dupont"
+    },
+    {
+      "id_personne_reference": "personne:marie-dupont-001",
+      "role": "conjoint",
+      "nom_affichage": "Marie Dupont"
+    },
+    {
+      "id_personne_reference": "personne:luc-dupont-001",
+      "role": "enfant",
+      "nom_affichage": "Luc Dupont"
+    },
+    {
+      "id_personne_reference": "personne:lea-dupont-001",
+      "role": "enfant",
+      "nom_affichage": "Léa Dupont"
+    }
+  ],
+  "liens_administratifs": {
+    "caf": {
+      "numero_allocataire": "5482910X",
+      "caisse_rattachement": "CAF Moselle"
+    },
+    "impots_gouv": {
+      "reference_foyer_fiscal": "FF-DEMO-57-2026-001"
+    }
+  },
+  "audit": {
+    "date_creation": "2026-04-20T10:00:00Z",
+    "date_mise_a_jour": "2026-04-20T13:45:00Z"
+  }
+}

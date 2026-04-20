@@ -1,0 +1,309 @@
+{
+  "schema": "urn:ropf:0.1",
+  "version_schema": "0.1.0",
+  "id_dossier": "8f6c3f4c-4ee4-4c49-b2f3-f4e2d8a7e991",
+  "personne": {
+    "type_personne": "personne_physique",
+    "statut_existence": "vivant",
+    "langue_principale": "fr",
+    "date_creation_dossier": "2026-04-20T10:00:00Z"
+  },
+  "etat_civil": {
+    "prenom": "Jean",
+    "deuxieme_prenom": "Michel",
+    "nom": "Dupont",
+    "nom_usage": "Dupont",
+    "sexe_declare": "masculin",
+    "date_naissance": "1987-04-12",
+    "commune_naissance": "Nancy",
+    "departement_naissance": "54",
+    "pays_naissance": "FR",
+    "nationalites": [
+      "FR"
+    ],
+    "surnoms": [
+      "JMD"
+    ],
+    "identifiants_officiels": [
+      {
+        "type_identifiant": "nir",
+        "valeur": "1 87 04 54 123 456 78",
+        "source": "assurance_maladie",
+        "verifie": true
+      },
+      {
+        "type_identifiant": "numero_fiscal",
+        "valeur": "273849102938",
+        "source": "impots_gouv",
+        "verifie": true
+      }
+    ]
+  },
+  "coordonnees": {
+    "emails": [
+      {
+        "adresse": "jean.dupont@example.fr",
+        "type": "personnel",
+        "principal": true,
+        "verifie": true
+      },
+      {
+        "adresse": "j.dupont@sas-exemple.fr",
+        "type": "professionnel",
+        "principal": false,
+        "verifie": true
+      }
+    ],
+    "telephones": [
+      {
+        "numero": "+33601020304",
+        "type": "mobile",
+        "principal": true,
+        "verifie": true
+      }
+    ],
+    "sites_web": [
+      "https://jeandupont.example.fr"
+    ]
+  },
+  "adresses": [
+    {
+      "type_adresse": "residence_principale",
+      "ligne_1": "12 rue des Lilas",
+      "ligne_2": "",
+      "code_postal": "57000",
+      "commune": "Metz",
+      "departement": "57",
+      "pays": "FR",
+      "coordonnees_gps": {
+        "latitude": 49.1193,
+        "longitude": 6.1757
+      },
+      "date_debut": "2021-09-01"
+    },
+    {
+      "type_adresse": "ancienne_adresse",
+      "ligne_1": "4 place Saint-Epvre",
+      "ligne_2": "",
+      "code_postal": "54000",
+      "commune": "Nancy",
+      "departement": "54",
+      "pays": "FR",
+      "date_fin": "2021-08-31"
+    }
+  ],
+  "foyer": {
+    "id_foyer": "foyer-57-0001",
+    "type_foyer": "couple_avec_enfants",
+    "nombre_adultes": 2,
+    "nombre_enfants": 2,
+    "membres": [
+      {
+        "id_personne_reference": "personne:conjoint-001",
+        "role": "conjoint"
+      },
+      {
+        "id_personne_reference": "personne:enfant-001",
+        "role": "enfant"
+      },
+      {
+        "id_personne_reference": "personne:enfant-002",
+        "role": "enfant"
+      }
+    ]
+  },
+  "parcours_professionnel": [
+    {
+      "employeur": "SAS Exemple",
+      "poste": "Développeur web",
+      "type_contrat": "cdi",
+      "date_debut": "2020-01-15",
+      "email_professionnel": "j.dupont@sas-exemple.fr",
+      "revenu_annuel_net_estime": 42000
+    }
+  ],
+  "liens_administratifs": {
+    "franceconnect": {
+      "identifiant_connexion": "jean.dupont.fc@example.fr",
+      "statut": "actif"
+    },
+    "impots_gouv": {
+      "numero_fiscal": "273849102938",
+      "reference_avis": "26AX93847",
+      "statut": "actif"
+    },
+    "ameli": {
+      "numero_assure_suffixe": "78",
+      "cpam_rattachement": "Moselle",
+      "statut": "actif"
+    },
+    "caf": {
+      "numero_allocataire": "5482910X",
+      "caisse_rattachement": "CAF Moselle",
+      "statut": "actif"
+    },
+    "ants": {
+      "identifiant_portail": "jd_ants_57",
+      "statut": "actif"
+    },
+    "mon_compte_formation": {
+      "identifiant_portail": "jean.dupont@example.fr",
+      "statut": "actif"
+    }
+  },
+  "comptes_numeriques": [
+    {
+      "id_compte": "cmp-google-001",
+      "service": "google",
+      "categorie_service": "identite_numerique",
+      "identifiant_connexion": "jean.dupont@gmail.com",
+      "mot_de_passe_fictif": "motdepasse_bidonnnn_2026",
+      "methode_authentification": [
+        "mot_de_passe",
+        "totp"
+      ],
+      "double_facteur_active": true,
+      "email_recuperation": "secours.dupont@example.fr",
+      "telephone_recuperation": "+33600000000",
+      "questions_recuperation": [
+        {
+          "question": "nom de votre premier chat",
+          "reponse_fictive": "chaussette-factice"
+        }
+      ],
+      "date_derniere_connexion_connue": "2026-04-19T21:11:00Z",
+      "statut_compte": "actif"
+    },
+    {
+      "id_compte": "cmp-amazon-001",
+      "service": "amazon",
+      "categorie_service": "commerce",
+      "identifiant_connexion": "jean.dupont@laposte.net",
+      "mot_de_passe_fictif": "FAUX-amazon-1234-demo",
+      "methode_authentification": [
+        "mot_de_passe"
+      ],
+      "double_facteur_active": false,
+      "statut_compte": "actif"
+    },
+    {
+      "id_compte": "cmp-facebook-001",
+      "service": "facebook",
+      "categorie_service": "reseau_social",
+      "identifiant_connexion": "jean.dupont.1987",
+      "mot_de_passe_fictif": "facebook_demo_pas_un_vrai_secret",
+      "methode_authentification": [
+        "mot_de_passe"
+      ],
+      "double_facteur_active": false,
+      "statut_compte": "actif"
+    },
+    {
+      "id_compte": "cmp-netflix-001",
+      "service": "netflix",
+      "categorie_service": "video",
+      "identifiant_connexion": "famille.dupont@example.fr",
+      "mot_de_passe_fictif": "netflix_bidonnn_0000",
+      "methode_authentification": [
+        "mot_de_passe"
+      ],
+      "double_facteur_active": false,
+      "statut_compte": "actif"
+    }
+  ],
+  "documents": [
+    {
+      "id_document": "doc-cni-001",
+      "type_document": "carte_nationale_identite",
+      "numero_document": "IDFR-FAUX-123456",
+      "date_expiration": "2031-05-12",
+      "fichier_reference": "objets/documents/cni-jean-dupont.pdf",
+      "empreinte_sha256": "3c7f0f7a8b2d-demo-factice"
+    },
+    {
+      "id_document": "doc-permis-001",
+      "type_document": "permis_conduire",
+      "numero_document": "PERMIS-DEMO-57-001",
+      "date_expiration": "2038-07-01",
+      "fichier_reference": "objets/documents/permis-jean-dupont.pdf",
+      "empreinte_sha256": "a91bb222-demo-factice"
+    }
+  ],
+  "historique": [
+    {
+      "id_evenement": "evt-001",
+      "type_evenement": "changement_adresse",
+      "date_evenement": "2021-09-01T10:00:00Z",
+      "description": "Installation à Metz"
+    },
+    {
+      "id_evenement": "evt-002",
+      "type_evenement": "creation_compte",
+      "date_evenement": "2018-03-12T09:12:00Z",
+      "description": "Création d’un compte sur une plateforme de commerce"
+    },
+    {
+      "id_evenement": "evt-003",
+      "type_evenement": "changement_mot_de_passe",
+      "date_evenement": "2025-11-08T18:20:00Z",
+      "description": "Rotation déclarée du mot de passe fictif d’un service tiers"
+    }
+  ],
+  "audit": {
+    "date_creation": "2026-04-20T10:00:00Z",
+    "date_mise_a_jour": "2026-04-20T13:45:00Z",
+    "sources": [
+      {
+        "nom_source": "registre_central_demo",
+        "date_import": "2026-04-20T10:00:00Z"
+      },
+      {
+        "nom_source": "agregateur_services_demo",
+        "date_import": "2026-04-20T10:15:00Z"
+      }
+    ],
+    "niveau_confiance_global": 0.92
+  },
+  "extensions": {
+    "x_consommation": {
+      "enseignes_habituelles": [
+        "Carrefour",
+        "Amazon",
+        "Leroy Merlin"
+      ],
+      "type_achats_frequents": [
+        "bricolage",
+        "electronique",
+        "courses"
+      ]
+    },
+    "x_equipements": {
+      "appareils": [
+        {
+          "type": "telephone",
+          "marque": "Samsung",
+          "modele": "Galaxy S24",
+          "imei_fictif": "IMEI-DEMO-0001"
+        },
+        {
+          "type": "ordinateur",
+          "marque": "Lenovo",
+          "modele": "ThinkPad X1",
+          "numero_serie_fictif": "SN-DEMO-2026-001"
+        }
+      ]
+    },
+    "x_reseau_social": {
+      "profils_publics": [
+        {
+          "service": "x",
+          "identifiant": "@jdemo57"
+        },
+        {
+          "service": "linkedin",
+          "identifiant": "jean-dupont-demo"
+        }
+      ]
+    }
+  }
+}
